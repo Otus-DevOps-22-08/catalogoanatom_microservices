@@ -2,3 +2,27 @@ REPOSITORY            TAG       IMAGE ID       CREATED         SIZE
 ama/ubuntu-tmp-file   latest    b23d288fbeac   9 minutes ago   63.1MB
 ubuntu                18.04     71eaf13299f4   6 weeks ago     63.1MB
 hello-world           latest    feb5d9fea6a5   14 months ago   13.3kB
+
+
+
+(*)
+
+$ docker container list
+CONTAINER ID   IMAGE          COMMAND       CREATED        STATUS        PORTS     NAMES
+73c16f7b059e   ubuntu:18.04   "/bin/bash"   12 hours ago   Up 12 hours             vigorous_sanderson
+
+
+Берем, например ubuntu.
+
+1) image_id
+docker inspect 71eaf13299f4
+
+2) container_id
+docker inspect 73c16f7b059e
+
+
+Контейнер , это   выполняющийся экземпляр приложения на основе  oбраза. Соотв. вывод разный. Образ по сути описывает набор слоев, билиотек  необходимых дла запуска
+контейнера. Как выполняемый файл на диске и процесс в системе.
+
+
+
