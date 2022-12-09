@@ -1,0 +1,4 @@
+REPOSITORY            TAG       IMAGE ID       CREATED         SIZE
+ama/ubuntu-tmp-file   latest    b23d288fbeac   9 minutes ago   63.1MB
+ubuntu                18.04     71eaf13299f4   6 weeks ago     63.1MB
+hello-world           latest    feb5d9fea6a5   14 months ago   13.3kB
