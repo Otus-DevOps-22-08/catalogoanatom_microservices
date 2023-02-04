@@ -14,4 +14,6 @@ ADD . $APP_HOME
 ENV COMMENT_DATABASE_HOST comment_db
 ENV COMMENT_DATABASE comments
 
+ENV NETWORK reddit
+
 CMD ["puma"]
