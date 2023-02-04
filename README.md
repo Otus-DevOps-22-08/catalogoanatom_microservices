@@ -10,6 +10,8 @@ catalogoanatom microservices repository
 - Освоил написание Dockerfile
 - Завел акаунт на  dockerhub и  запушил туда контейнер
 - Сделал первое задание со *, вторе некогда
+- Освоил форматирование README :)
 
-
+### Проблемы
+docker-machine не создается, если на удаленном хосте отсутствует каталог /etc/docker
 
