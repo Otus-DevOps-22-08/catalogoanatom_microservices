@@ -26,3 +26,12 @@ SSH cmd err, output: exit status 1: -----BEGIN CERTIFICATE-----
 -----END CERTIFICATE-----
 tee: /etc/docker/ca.pem: No such file or directory
 ```
+### docker-3
+
+### docker-4
+
+#### Проблемы
+docker-compose  утстереет в июне 2023. Версия V2  идет как plugin к docker и запускается
+doker compose
+
+
