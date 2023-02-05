@@ -9,6 +9,5 @@ RUN apk --no-cache --update add build-base && \
 
 ENV POST_DATABASE_HOST post_db
 ENV POST_DATABASE posts
-ENV NETWORK reddit
 
 ENTRYPOINT ["python3", "post_app.py"]
