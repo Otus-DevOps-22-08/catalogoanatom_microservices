@@ -62,3 +62,9 @@ go get -u github.com/yandex-cloud/docker-machine-driver-yandex
  logging
 ```
 
+
+#### Проблемы
+Новая версия установки  Go модуля:
+```
+go install   github.com/yandex-cloud/docker-machine-driver-yandex@latest
+```
