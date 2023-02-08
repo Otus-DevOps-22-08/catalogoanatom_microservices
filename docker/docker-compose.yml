@@ -59,7 +59,12 @@ services:
       - '--path.sysfs=/host/sys'
       - '--collector.filesystem.ignored-mount-points="^/(sys|proc|dev|host|etc)($$|/)"'
 
-
+  blackbox-exporter:
+    image: bitnami/blackbox-exporter:0.23.0
+    networks:
+      - front_net
+    volumes:
+      - ../monitoring/blackbox-exporter/blackbox-exporter.yml:/opt/blackbox-exporter/conf/config.yml
 
 volumes:
   post_db:
