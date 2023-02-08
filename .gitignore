@@ -1,4 +1,4 @@
-uild_info.txt
+build_info.txt
 prometheus/
 ## python specific
 *.pyc
