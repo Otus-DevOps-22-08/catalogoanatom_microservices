@@ -10,7 +10,7 @@ services:
           - comment_db
           - post_db
   ui:
-    build: ../src/ui
+#   build: ../src/ui
     image: ${DUSERNAME}/ui:${UI_VERSION}
     ports:
       - ${EXT_PORT}:9292/tcp
@@ -26,13 +26,13 @@ services:
       - ZIPKIN_ENABLED=${ZIPKIN_ENABLED}
 
   post:
-    build: ../src/post-py
+ #   build: ../src/post-py
     image: ${DUSERNAME}/post:${POST_VERSION}
     networks:
       - back_net
       - front_net
   comment:
-    build: ../src/comment
+#    build: ../src/comment
     image: ${DUSERNAME}/comment:${COMMENT_VERSION}
     networks:
       - back_net
