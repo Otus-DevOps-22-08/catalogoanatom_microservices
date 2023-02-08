@@ -37,7 +37,7 @@ doker compose
 Не получалось подлять mongo. Вылечилось  docker system prune -a, с ребилдом всех контейнеров.
 
 
-#### logging-1
+### logging-1
 Создаем docker-machine ,  с использованием driver от YANDEX
 ```
 sudo add-apt-repository ppa:longsleep/golang-backports
