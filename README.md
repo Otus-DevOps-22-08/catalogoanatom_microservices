@@ -36,3 +36,42 @@ doker compose
 
 Не получалось подлять mongo. Вылечилось  docker system prune -a, с ребилдом всех контейнеров.
 
+
+### logging-1
+Создаем docker-machine ,  с использованием driver от YANDEX
+```
+sudo add-apt-repository ppa:longsleep/golang-backports
+sudo apt update
+sudo apt install golang-go
+```
+
+```
+go get -u github.com/yandex-cloud/docker-machine-driver-yandex
+```
+
+
+
+```
+ docker-machine create \
+ --driver yandex \
+ --yandex-image-family "ubuntu-1804-lts" \
+ --yandex-platform-id "standard-v1" \
+ --yandex-folder-id $FOLDER_ID \
+ --yandex-sa-key-file $SA_KEY_PATH \
+ --yandex-memory "4" \
+ logging
+```
+
+
+
+export USER_NAME=catalogoanatom
+cd ./src/ui && bash docker_build.sh && docker push $USER_NAME/ui
+cd ../post-py && bash docker_build.sh && docker push $USER_NAME/post
+cd ../comment && bash docker_build.sh && docker push $USER_NAME/comment
+
+
+#### Проблемы
+Новая версия установки  Go модуля:
+```
+go install   github.com/yandex-cloud/docker-machine-driver-yandex@latest
+```
