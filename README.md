@@ -36,3 +36,6 @@ doker compose
 
 Не получалось подлять mongo. Вылечилось  docker system prune -a, с ребилдом всех контейнеров.
 
+### Kubernetes-1
+Основная сложность была в настройке k8s кластера.
+Все мои изыски были проведены локально на libvirt https://github.com/catalogoanatom/k8s, потом воспроизведены в YC.
