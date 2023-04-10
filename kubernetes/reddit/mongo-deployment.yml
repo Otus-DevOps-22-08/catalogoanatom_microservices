@@ -22,7 +22,7 @@ spec:
         comment-db: "true"
     spec:
       containers:
-      - image: mongo:3.2
+      - image: mongo:4.2
         name: mongo
         volumeMounts:
         - name: mongo-persistent-storage
