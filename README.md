@@ -83,8 +83,7 @@ go install   github.com/yandex-cloud/docker-machine-driver-yandex@latest
 - Разобрался с локальной установкой Kubernetes, kubectl, minikube
 - Разобрался с развертывением Kebernetes в YandexCloud
 - Для запуска dashboard в minikube
-```bash
-minikube dashboard --url```
+```bash minikube dashboard --url```
 
 
 
