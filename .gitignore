@@ -6,3 +6,6 @@ prometheus/
 
 build.sh
 run*.sh
+
+tls.crt
+tls.key
